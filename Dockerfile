@@ -15,6 +15,6 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-WORKDIR src
+WORKDIR srcd
 
 CMD gunicorn main:app --workers 3 --worker-class uvicorn.workers.UvicornWorker --bind=0.0.0.0:5000
